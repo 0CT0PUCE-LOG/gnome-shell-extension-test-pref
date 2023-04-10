@@ -1,0 +1,15 @@
+{
+  "description": "Arrangment of three buttons in the top panel to instantly shutdown/reboot/logout.",
+  "name": "Test Pref",
+  "shell-version": [
+    "43"
+  ],
+  "url": "https://github.com/0CT0PUCE-LOG/gnome-shell-extension-test-pref",
+  "uuid": "test-pref@0ct0puce.com",
+  "version": 1,
+  "settings-schema": "org.gnome.shell.extensions.test-pref",
+  "dependencies": [
+    "gnome-shell-extension-common"
+  ],
+  "gettext-domain": "test-pref"
+}

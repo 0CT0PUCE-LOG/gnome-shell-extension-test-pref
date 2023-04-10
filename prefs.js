@@ -46,9 +46,6 @@ function fillPreferencesWindow(window) {
         'show-indicator',
         toggle_logout,
         'active',
-        'show-indicator3',
-        toggle_shutdown,
-        'active',
         Gio.SettingsBindFlags.DEFAULT
     );
 
@@ -57,7 +54,14 @@ function fillPreferencesWindow(window) {
         toggle_reboot,
         'active',
         Gio.SettingsBindFlags.DEFAULT
-    )
+    );
+
+    settings.bind(
+        'show-indicator3',
+        toggle_shutdown,
+        'active',
+        Gio.SettingsBindFlags.DEFAULT
+    );
 
     // Add the switch to the row
     row_logout.add_suffix(toggle_logout);

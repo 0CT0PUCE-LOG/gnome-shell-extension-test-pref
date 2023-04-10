@@ -54,9 +54,6 @@ class Extension {
             'show-indicator',
             this._indicator,
             'visible',
-            'show-indicator3',
-            this._indicator3,
-            'visible',
             Gio.SettingsBindFlags.DEFAULT
         );
         this.settings.bind(
@@ -64,7 +61,13 @@ class Extension {
             this._indicator2,
             'visible',
             Gio.SettingsBindFlags.DEFAULT
-        )
+        );
+        this.settings.bind(
+            'show-indicator3',
+            this._indicator3,
+            'visible',
+            Gio.SettingsBindFlags.DEFAULT
+        );
 
         Main.panel.addToStatusArea(indic_logout, this._indicator);
         Main.panel.addToStatusArea(indic_reboot, this._indicator2);

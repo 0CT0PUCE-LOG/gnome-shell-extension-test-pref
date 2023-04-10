@@ -63,9 +63,9 @@ class Extension {
             Gio.SettingsBindFlags.DEFAULT
         );
 
-        Main.panel.addToStatusArea(indicatorName, this._indicator);
-        Main.panel.addToStatusArea(indicatorName, this._indicator2);
-        Main.panel.addToStatusArea(indicatorName, this._indicator3);
+        Main.panel.addToStatusArea(indic_logout, this._indicator);
+        Main.panel.addToStatusArea(indic_reboot, this._indicator2);
+        Main.panel.addToStatusArea(indic_shutdown, this._indicator3);
     }
 
     disable() {

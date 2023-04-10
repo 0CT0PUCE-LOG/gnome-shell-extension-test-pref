@@ -16,7 +16,7 @@ class Extension {
         log(`enabling ${Me.metadata.name}`);
 
         this.settings = ExtensionUtils.getSettings(
-            'org.gnome.shell.extensions.example');
+            'org.gnome.shell.extensions.test-pref');
 
         //building icons
         let indic_logout = `${Me.metadata.name} indic_logout`;
